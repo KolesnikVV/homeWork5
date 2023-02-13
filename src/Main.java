@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void task1() {
@@ -43,10 +44,23 @@ public class Main {
             System.out.println("Если человеку " + age + " лет, тот ему нужно ходить в детский сад.");
         } else if (age >= 7 && age <= 18) {
             System.out.println("Если человеку " + age + " лет, тот ему нужно ходить в школу.");
-        } else if (age >= 19 && age <=24 ) {
-            System.out.println("Если человеку " + age + " лет, то его место в университете.");}
-        else if (age >24) {
+        } else if (age >= 19 && age <= 24) {
+            System.out.println("Если человеку " + age + " лет, то его место в университете.");
+        } else if (age > 24) {
             System.out.println("Если человеку " + age + " лет, то ему пора ходить на работу");
         }
     }
+
+    public static void task5() {
+        System.out.println("Задание 5");
+        int age = 50;
+        if (age < 5) {
+            System.out.println("Если возраст ребенка " + age + " лет, то ему нельзя кататься на атракционе.");
+        } else if (age >= 5 && age <= 14) {
+            System.out.println("Если возраст ребенка " + age + " лет, то ему можно кататься на атракционе в соправождение взрослого.");
+        } else if (age > 14) {
+            System.out.println("Если возраст ребенка " + age + " лет, то ему можно кататься на атракционе без соправождение взрослого.");
+        }
+    }
 }
+
