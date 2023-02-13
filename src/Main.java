@@ -35,7 +35,18 @@ public class Main {
             System.out.println("Если скорость " + speed + " , можно ехать спокойно.");
         }
     }
-    public static void task4(){
+
+    public static void task4() {
         System.out.println("Задание 4");
+        int age = 21;
+        if (age >= 2 && age <= 6) {
+            System.out.println("Если человеку " + age + " лет, тот ему нужно ходить в детский сад.");
+        } else if (age >= 7 && age <= 18) {
+            System.out.println("Если человеку " + age + " лет, тот ему нужно ходить в школу.");
+        } else if (age >= 19 && age <=24 ) {
+            System.out.println("Если человеку " + age + " лет, то его место в университете.");}
+        else if (age >24) {
+            System.out.println("Если человеку " + age + " лет, то ему пора ходить на работу");
+        }
     }
 }
