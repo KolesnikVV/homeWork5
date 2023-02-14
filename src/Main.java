@@ -87,14 +87,28 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задание 7");
-        int one = 100;
-        int two = 50;
-        int three = 30;
+        int one = 5;
+        int two = 5;
+        int three = 5;
         if (one > two && one > three) {
             System.out.println(one);
-        } else if (two > one && two > three){
-            System.out.println(two);
-        } else if (three > one && three > two) {
+        }
+        else  if (one == two && one > three) {
+            System.out.println("числа " + one + " и " + two + " равны");
+        }
+        if (two > three && two > one){
+            System.out.println(two);}
+        else if (two == three && two> one) {
+            System.out.println("числа " + two + " и " + three + " равны");
+
+        }
+        if (three > two && three > one){
             System.out.println(three);}
+        else if (three == one && three > two) {
+            System.out.println("числа " + one + " и " + three + " равны");
+        }
+        if (one == two && two == three) {
+            System.out.println("Все три чила равны");
+        }
     }
 }
