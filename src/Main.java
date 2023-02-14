@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -84,4 +85,16 @@ public class Main {
         }
     }
 
+    public static void task7() {
+        System.out.println("Задание 7");
+        int one = 100;
+        int two = 50;
+        int three = 30;
+        if (one > two && one > three) {
+            System.out.println(one);
+        } else if (two > one && two > three){
+            System.out.println(two);
+        } else if (three > one && three > two) {
+            System.out.println(three);}
+    }
 }
