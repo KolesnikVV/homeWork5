@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -62,5 +63,25 @@ public class Main {
             System.out.println("Если возраст ребенка " + age + " лет, то ему можно кататься на атракционе без соправождение взрослого.");
         }
     }
-}
 
+    public static void task6() {
+        System.out.println("Задание 6");
+        int occupiedStanding = 45;
+        int occupiedSeats = 60;
+        byte totalSeatsInTheVan = 102;
+        byte totalSeats = 60;
+        int totalStanding = totalSeatsInTheVan - totalSeats;
+        int placesSeatsLeft = totalSeats - occupiedSeats;
+        int placesStandingLeft = totalStanding - occupiedStanding;
+        int totalPlacesLeft = totalSeatsInTheVan - (occupiedSeats + occupiedStanding);
+        int totalOccupiedSeats = occupiedSeats + occupiedStanding;
+        if (totalOccupiedSeats < 102) {
+            System.out.println("всего сидячих мест осталось " + placesSeatsLeft);
+            System.out.println("всего стоячих мест осталось " + placesStandingLeft);
+            System.out.println("всего свободных мест осталось " + totalPlacesLeft);
+        } else {
+            System.out.println("Свободных мест нет!");
+        }
+    }
+
+}
